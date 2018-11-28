@@ -279,9 +279,24 @@ function playAudio(audio, licenseNum) {
 }
 
 function playPauseFloat() {
-    if(backgroundPlay.paused === true) {
+    if(backgroundPlay.paused) {
         startBackgroundAudio();
     } else {
         stopBackgroundAudio();
     }
+}
+function playBgAudio(filename,index){
+    if(!backgroundPlay.paused){
+        document.getElementById("changeTrack"+index).className="fa fa-play";
+        stopBackgroundAudio();
+    }else{
+        document.getElementById("changeTrack"+index).className="fa fa-pause";
+        backgroundPlay = new Audio(filename);
+        startBackgroundAudio();
+        $("#legalNotice").html(backgroundAudio[index].legalNotice);
+        $("#backgroundSongName").html(backgroundAudio[index].backgroundSongName);
+        $("#legalNotice").attr("href", backgroundAudio[index].link);
+        $("#backgroundSongAuthor").html(backgroundAudio[index].author);
+    }
+
 }

@@ -276,40 +276,9 @@ const door = {
             alertInfo("Welcome to the Labyrinth !", "Explore More ! Let's see what can find ...");
         },
     }),
-
+    
 
     quake: Object.assign({},OpenDoors,{
-        canLeaveToTheTop: function(player) {
-            return false;
-        },
-        CanEnterFromTheRight() {
-            return false;
-        },
-
-        CanLeaveFromTheRight() {
-            return false;
-        },
-        canEnterFromTheTop: function(player) {
-            return false;
-        },
-        createImages: function() {
-            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
-            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
-            this.ground = this.createImage("tiles/rooms/floor/quake.svg");
-        },
-        visit: function() {
-            if(player.inventory.has("Bomb")){
-                alertWarning("Quake", "The Bomb has blown, the ground is shaking! RUN!");
-            }else{
-                alertInfo("Quake", "Earthquake!, the ground is shaking! RUN!");
-            }
-
-            this.wallTop.show();
-            this.wallRight.show();
-            this.ground.show();
-         },
-    }),
-    handy: Object.assign({},OpenDoors,{
         canLeaveToTheTop: function(player) {
             return false;
         },
@@ -2077,7 +2046,7 @@ const party = {
 };
 const crazy ={
     both:OpenDoors,
-
+    
     right: Object.assign({}, OpenDoors, {
         canLeaveToTheTop: function(player) {
             return false;
@@ -2093,22 +2062,22 @@ const crazy ={
             return false;
         },
         createImages: function() {
-
-
+            
+            
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.wallTop = this.createImage("tiles/rooms/wall/quirky.svg");
-
+            
             this.ground = this.createImage("tiles/rooms/floor/quirky.svg");
         },
         visit: function() {
-            playAudio("music/Quirks/My Song .mp3", 1);
-
+            playAudio("music/Quirks/My Song .mp3", 1); 
+           
             alertWarning("Quirky", "Everything is crazy!");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
          },
-
+    
     }),
     top: Object.assign({}, OpenDoors, {
         canLeaveToTheTop: function(player) {
@@ -2125,16 +2094,16 @@ const crazy ={
             return false;
         },
         createImages: function() {
-
-
+            
+            
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.wallTop = this.createImage("tiles/rooms/wall/quirky.svg");
-
+            
             this.ground = this.createImage("tiles/rooms/floor/quirky.svg");
         },
         visit: function() {
-            playAudio("music/Quirks/My Song .mp3", 1);
-
+            playAudio("music/Quirks/My Song .mp3", 1); 
+           
             alertWarning("Quirky", "Everything is crazy!");
             this.wallTop.show();
             this.wallRight.show();
@@ -2156,16 +2125,16 @@ const crazy ={
             return false;
         },
         createImages: function() {
-
-
+            
+            
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.wallTop = this.createImage("tiles/rooms/wall/quirky.svg");
-
+            
             this.ground = this.createImage("tiles/rooms/floor/quirky.svg");
         },
         visit: function() {
-            playAudio("music/Quirks/My Song .mp3", 1);
-
+            playAudio("music/Quirks/My Song .mp3", 1); 
+           
             alertWarning("Quirky", "Everything is crazy!");
             this.wallTop.show();
             this.wallRight.show();
@@ -2187,16 +2156,16 @@ const crazy ={
             return false;
         },
         createImages: function() {
-
-
+            
+            
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.wallTop = this.createImage("tiles/rooms/wall/quirky.svg");
-
+            
             this.ground = this.createImage("tiles/rooms/floor/quirky.svg");
         },
         visit: function() {
-            playAudio("music/Quirks/My Song .mp3", 1);
-
+            playAudio("music/Quirks/My Song .mp3", 1); 
+           
             alertWarning("Quirky", "Everything is crazy!");
             this.wallTop.show();
             this.wallRight.show();

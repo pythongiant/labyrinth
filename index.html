@@ -209,6 +209,14 @@
           <p class="range-field">
             <input type="range" onchange="setVolume()" id='volume1' min=0 max=1 step=0.1 value='1'>
           </p>
+          <div id="changeTrackParent">
+          </div>
+          <script>
+          const ParentElement = document.getElementById("changeTrackParent")
+          backgroundAudio.forEach(function(element,index) {
+              ParentElement.innerHTML+=`<div class="track"><div>`+ element.backgroundSongName +`</div><div><a class="waves-effect waves-light btn blue-grey darken-2" onclick="playBgAudio('`+element.filename+`',`+index+`);"><i id='changeTrack`+index+`' class="fa fa-play"></i></a></div></div>`
+          });
+          </script>
           <div id="tileLicense"></div>
         </div>
         <div class="border1"></div>

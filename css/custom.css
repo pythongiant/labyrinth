@@ -499,3 +499,16 @@ i.fa.fa-thumbs-down.fa-5x:hover{
   text-align:center;
   background:rgb(48, 187, 104);
 }
+#changeTrackParent{
+  width: 50vw;
+  height: 70vh;
+  overflow-y: scroll;
+}
+.track{
+  padding:20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  border:solid 1px #f4f0ed;
+  background-color: #82b75b;
+}

@@ -27,8 +27,13 @@ function createFirstLevel()
     [door.fairysWheel, door.design, door.cricketGround, door.treasure, door.yellow, door.red],
     [door.both, door.blood, door.marina, door.treasureKey, door.drawn, door.night],
     [door.handy, door.boat, door.river, desert.universe, door.cake, door.newYear],
+<<<<<<< HEAD
     [door.both, door.square, door.quake, door.programmer, door.cake, door.mountains],
     [door.both, door.boat, door.river, desert.universe, door.oldRoom, door.mountains],  
+=======
+    [door.both, door.square, door.quake, desert.universe, door.cake, door.mountains],
+    [door.both, door.boat, door.river, desert.universe, door.cake, door.mountains],  
+>>>>>>> c671401... add a new level
   ]);
 }
 
@@ -70,6 +75,7 @@ function createSpaceLevel() {
   ]);
 }
 
+<<<<<<< HEAD
 function createHexLevel() {
   return new Level("Hex", [
     [hex.none, hex.right, hex.right, hex.right, hex.right, hex.none],
@@ -82,6 +88,8 @@ function createHexLevel() {
   ]);
 }
 
+=======
+>>>>>>> c671401... add a new level
 function createCrazyLevel() {
   return new Level("Crazy", [
     [crazy.none, crazy.right, crazy.right, crazy.right, crazy.right, crazy.right, crazy.top],
