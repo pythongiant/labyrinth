@@ -626,7 +626,7 @@ const door = {
     }),
     green: Object.assign({}, OpenDoors, {
         createImages: function() {
-            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallTop = this.createImage("tiles/rooms/door/modernTopDoor.svg");
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/live.svg");
         },
@@ -781,7 +781,7 @@ const door = {
     }),
     goal: Object.assign({}, OpenDoors, {
         createImages: function() {
-            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallTop = this.createImage("tiles/rooms/wall/modernTopDoor.svg");
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/goal.svg");
         },
@@ -2315,7 +2315,7 @@ const Superhero = {
             return false;
         },
         createImages: function () {
-            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallTop = this.createImage("tiles/rooms/door/modernTopDoor.svg");
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/art.svg");
         },
@@ -2389,7 +2389,7 @@ const TileMesh = {
             return false;
         },
         createImages: function() {
-            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallTop = this.createImage("tiles/rooms/wall/modernWallTop.svg");
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/bubbleMesh.svg");
              alertInfo("Bubbles!", "Bubbly Bumble.");
