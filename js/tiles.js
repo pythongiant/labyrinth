@@ -451,12 +451,8 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/programmer.svg");
         },
     }),
-<<<<<<< HEAD
-    
-=======
 
 
->>>>>>> Added functionality(Spaceship and Space)
     mountains: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {return false;},
         canLeaveToTheRight() {return false;},
